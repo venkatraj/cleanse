@@ -86,7 +86,7 @@ function cleanse_header_style() {
 		}
     }
 }
-endif; // equity_header_style
+endif; // cleanse_header_style
 
 
 /**
@@ -94,8 +94,8 @@ endif; // equity_header_style
  */
 if(!function_exists('cleanse_video_controls') ) {
 	function cleanse_video_controls( $settings ) {
-		$settings['l10n']['play'] = '<span class="screen-reader-text">' . __( 'Play background video', 'equity' ) . '</span><i class="fa fa-play"></i>';
-		$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'equity' ) . '</span><i class="fa fa-pause"></i>';
+		$settings['l10n']['play'] = '<span class="screen-reader-text">' . __( 'Play background video', 'cleanse' ) . '</span><i class="fa fa-play"></i>';
+		$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'cleanse' ) . '</span><i class="fa fa-pause"></i>';
 		return $settings;
 	}
 }

@@ -126,7 +126,7 @@ function cleanse_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => __( 'Working Hour :  Mon - Sat ( 8AM - 8PM )','cleasne')
+					  'text'  => __( 'Working Hour :  Mon - Sat ( 8AM - 8PM )','cleanse')
 					)
 				),
 			),

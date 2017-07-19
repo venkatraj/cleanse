@@ -1,4 +1,4 @@
-<?php   
+<?php    
 $cleanse_page_builder = esc_html(__( 'Page Builder', 'cleanse' ));
 $cleanse_page_builder_details = esc_html(__('Cleanse Pro supports Page Builder. All our shortcodes can be used as widgets too. You can drag and drop our widgets with page builder visual editor.', 'cleanse' ));
 $cleanse_page_layout = esc_html(__( 'Page Layout', 'cleanse' ));
@@ -165,7 +165,7 @@ function cleanse_display_upgrade() {
     
     $current_action_link =  admin_url( 'themes.php?page=cleanse_upgrade&tab=pro_features' ); ?>
     <div class="cleanse-wrapper about-wrap">
-        <h1><?php printf(esc_html__('Welcome to %1s - Version %2s', 'cleanse'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
+        <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'cleanse'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
        	printf( __('<div class="about-text"> Cleanse is a beautiful and Flexible WordPress Free theme for cleaning services,Maintenance, Maid clean services. Cleanse is also highly suitable for other company and corporate categories. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 3 Footer Widget Areas.</div>', 'cleanse') ); ?>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'cleanse'), $theme_data->Name ); ?></a></p>
