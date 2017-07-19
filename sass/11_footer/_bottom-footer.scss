@@ -1,0 +1,16 @@
+.site-info {
+	background: rgba($black,0.5);
+	.copyright {
+		padding: 10px 0px;
+		color:$white;
+		text-align:center;
+		p {
+			margin-bottom:0px;
+			a {
+				&:hover {
+					color:$white;
+				}
+			}
+		}
+	}
+}

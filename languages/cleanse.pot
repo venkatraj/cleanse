@@ -1,0 +1,834 @@
+# Copyright (C) 2017 cleanse
+# This file is distributed under the same license as the cleanse package.
+msgid ""
+msgstr ""
+"Project-Id-Version: cleanse\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:35, comments.php:52
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36
+msgid " Previous Comments"
+msgstr ""
+
+#: comments.php:37, comments.php:54
+msgid "Next Comments"
+msgstr ""
+
+#: comments.php:53
+msgid "Previous Comments"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:73
+msgid "Post Comments"
+msgstr ""
+
+#: comments.php:75
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:83
+msgid "Name"
+msgstr ""
+
+#: comments.php:88
+msgid "Email"
+msgstr ""
+
+#: comments.php:93
+msgid "Website"
+msgstr ""
+
+#: footer.php:29
+msgid "<p>Powered by <a href=\"%1$s\" target=\"_blank\">WordPress</a>"
+msgstr ""
+
+#: footer.php:31
+msgid "Theme: Cleanse by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Genex Themes</a></p>"
+msgstr ""
+
+#: front-page.php:38, includes/template-tags.php:458, template-parts/content-single.php:46, template-parts/content.php:52
+msgid "Read More"
+msgstr ""
+
+#: functions.php:46
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:141
+msgid "<h4 class=\"widget-title\">Cleaning</h4>Cleaning is created for your professional business, why not purchase and make the difference today? Get more customers who are thirsty to run to hire your service."
+msgstr ""
+
+#: functions.php:156
+msgid "<h4 class=\"widget-title\">Cleaning Office</h4><ul><li><i class=\"fa fa-map-marker\"></i>14 Tottenham Court Road, London, English</li><li><i class=\"fa fa-phone\"></i>(102) 6666 8888</li><li><i class=\"fa fa-envelope\"></i>info@mail.com</li><li><i class=\"fa fa-fax\"></i>(102) 8888 9999</li><li><i class=\"fa fa-clock-o\"></i>Mon - Sat: 9:00 - 18:00</li></ul>"
+msgstr ""
+
+#: functions.php:172
+msgid "Post One"
+msgstr ""
+
+#: functions.php:173
+msgid "<h1>We keep your World Fresh</h1> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p><a href=\"#\">Download Now</a></p>"
+msgstr ""
+
+#: functions.php:178
+msgid "Post Two"
+msgstr ""
+
+#: functions.php:179
+msgid "<h2>Clean the world to Get Green world</h2> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p><a href=\"#\">Download Now</a></p>"
+msgstr ""
+
+#: functions.php:184
+msgid "Home Cleaning"
+msgstr ""
+
+#: functions.php:185, functions.php:191, functions.php:197, functions.php:203
+msgid "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur.<p><a href=\"#\">Read More</a></p>"
+msgstr ""
+
+#: functions.php:190
+msgid "Building Cleaning"
+msgstr ""
+
+#: functions.php:196
+msgid "Vehicle Cleaning"
+msgstr ""
+
+#: functions.php:202
+msgid "Commercial Cleaning"
+msgstr ""
+
+#: functions.php:208
+msgid "Center Image"
+msgstr ""
+
+#: functions.php:217
+msgid "slider one"
+msgstr ""
+
+#: functions.php:221, functions.php:225
+msgid "Page Images"
+msgstr ""
+
+#: functions.php:268
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:277
+msgid "Top Left"
+msgstr ""
+
+#: functions.php:286
+msgid "Top Right"
+msgstr ""
+
+#: functions.php:295
+msgid "Header Right"
+msgstr ""
+
+#: functions.php:304
+msgid "Footer %d"
+msgstr ""
+
+#: functions.php:314
+msgid "Footer Nav"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:46
+msgid "Call Us Now"
+msgstr ""
+
+#: search.php:25
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:37
+msgid "About Author:"
+msgstr ""
+
+#: template-full-width.php:2
+msgid "Full Width Template"
+msgstr ""
+
+#: includes/enqueue.php:38
+msgctxt "Font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/options-config.php:2
+msgid "Page Builder"
+msgstr ""
+
+#: includes/options-config.php:3
+msgid "Cleanse Pro supports Page Builder. All our shortcodes can be used as widgets too. You can drag and drop our widgets with page builder visual editor."
+msgstr ""
+
+#: includes/options-config.php:4
+msgid "Page Layout"
+msgstr ""
+
+#: includes/options-config.php:5
+msgid "Cleanse Pro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!"
+msgstr ""
+
+#: includes/options-config.php:6, includes/options-config.php:312
+msgid "Unlimited Sidebar"
+msgstr ""
+
+#: includes/options-config.php:7
+msgid "Unlimited sidebars allows you to create multiple sidebars. Check out our demo site to see how different pages displays different sidebars!"
+msgstr ""
+
+#: includes/options-config.php:8
+msgid "Shortcode Builder"
+msgstr ""
+
+#: includes/options-config.php:9
+msgid "With our shortcode builder and lots of shortcodes, you can easily create nested shortcodes and build custom pages!"
+msgstr ""
+
+#: includes/options-config.php:10
+msgid "Multi Portfolio"
+msgstr ""
+
+#: includes/options-config.php:11
+msgid "7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple other alternate layouts for interior pages!"
+msgstr ""
+
+#: includes/options-config.php:12
+msgid "Typography"
+msgstr ""
+
+#: includes/options-config.php:13
+msgid "Cleanse Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!"
+msgstr ""
+
+#: includes/options-config.php:14
+msgid "Awesome Sliders"
+msgstr ""
+
+#: includes/options-config.php:15
+msgid "Cleanse Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site."
+msgstr ""
+
+#: includes/options-config.php:16
+msgid "Woo Commerce"
+msgstr ""
+
+#: includes/options-config.php:17
+msgid "Cleanse Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site!"
+msgstr ""
+
+#: includes/options-config.php:18
+msgid "Custom Widget"
+msgstr ""
+
+#: includes/options-config.php:19
+msgid "We offer many custom widgets that are stylized and ready for use. Simply drag &amp; drop into place to activate!"
+msgstr ""
+
+#: includes/options-config.php:20
+msgid "Advanced Admin"
+msgstr ""
+
+#: includes/options-config.php:21
+msgid " you can customize any part of your site quickly and easily using customize options!"
+msgstr ""
+
+#: includes/options-config.php:22
+msgid "Font Awesome"
+msgstr ""
+
+#: includes/options-config.php:23
+msgid "Font Awesome icons are fully integrated into the theme. Use them anywhere in your site in 6 different sizes!"
+msgstr ""
+
+#: includes/options-config.php:24
+msgid "Responsive Layout"
+msgstr ""
+
+#: includes/options-config.php:25
+msgid "Cleanse Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!"
+msgstr ""
+
+#: includes/options-config.php:26
+msgid "Testimonials"
+msgstr ""
+
+#: includes/options-config.php:27
+msgid "With our testimonial post type, shortcode and widget, Displaying testimonials is a breeze."
+msgstr ""
+
+#: includes/options-config.php:28
+msgid "Social Media"
+msgstr ""
+
+#: includes/options-config.php:29
+msgid "Want your users to stay in touch? No problem, cleanse Pro has Social Media icons all throughout the theme!"
+msgstr ""
+
+#: includes/options-config.php:30, includes/options-config.php:282
+msgid "Google Map"
+msgstr ""
+
+#: includes/options-config.php:31
+msgid "Cleanse Pro includes Goole Map as shortcode and widget. So, you can use it anywhere in your site!"
+msgstr ""
+
+#: includes/options-config.php:32
+msgid "Customization"
+msgstr ""
+
+#: includes/options-config.php:33
+msgid "With advanced theme options, page options & extensive docs, its never been easier to customize a theme!"
+msgstr ""
+
+#: includes/options-config.php:34
+msgid "Demo content"
+msgstr ""
+
+#: includes/options-config.php:35
+msgid "Theme includes single click demo content. You can quickly setup the site like our demo and get started easily!"
+msgstr ""
+
+#: includes/options-config.php:36
+msgid "Improvement"
+msgstr ""
+
+#: includes/options-config.php:37
+msgid "We love our theme and customers. We are committed to improve and add new features to Theme!"
+msgstr ""
+
+#: includes/options-config.php:40
+msgid "View Demo"
+msgstr ""
+
+#: includes/options-config.php:41
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: includes/options-config.php:138
+msgid "Cleanse Theme"
+msgstr ""
+
+#: includes/options-config.php:140
+msgid "Upgrade To Cleanse Pro"
+msgstr ""
+
+#: includes/options-config.php:168
+msgid "Welcome to %1s - Version %2s"
+msgstr ""
+
+#: includes/options-config.php:169
+msgid "<div class=\"about-text\"> Cleanse is a beautiful and Flexible WordPress Free theme for cleaning services,Maintenance, Maid clean services. Cleanse is also highly suitable for other company and corporate categories. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 3 Footer Widget Areas.</div>"
+msgstr ""
+
+#: includes/options-config.php:171, includes/options-config.php:319
+msgid "Buy %1s Pro - $39"
+msgstr ""
+
+#: includes/options-config.php:174
+msgid "Cleanse"
+msgstr ""
+
+#: includes/options-config.php:175
+msgid "PRO Fearures"
+msgstr ""
+
+#: includes/options-config.php:176
+msgid "Free VS PRO"
+msgstr ""
+
+#: includes/options-config.php:185
+msgid "Theme Customizer"
+msgstr ""
+
+#: includes/options-config.php:186
+msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
+msgstr ""
+
+#: includes/options-config.php:188
+msgid "Start Customize"
+msgstr ""
+
+#: includes/options-config.php:192
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/options-config.php:193
+msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
+msgstr ""
+
+#: includes/options-config.php:195
+msgid " Documentation"
+msgstr ""
+
+#: includes/options-config.php:200
+msgid "Having Trouble, Need Support?"
+msgstr ""
+
+#: includes/options-config.php:201
+msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
+msgstr ""
+
+#: includes/options-config.php:237
+msgid "Flex Slider"
+msgstr ""
+
+#: includes/options-config.php:242
+msgid "Support"
+msgstr ""
+
+#: includes/options-config.php:247
+msgid "Responsive Design"
+msgstr ""
+
+#: includes/options-config.php:252
+msgid "Custom Logo Option"
+msgstr ""
+
+#: includes/options-config.php:257
+msgid "Social Links"
+msgstr ""
+
+#: includes/options-config.php:262
+msgid "Unlimited color option"
+msgstr ""
+
+#: includes/options-config.php:267
+msgid "Elastic Slider"
+msgstr ""
+
+#: includes/options-config.php:272
+msgid "Page Builder Support"
+msgstr ""
+
+#: includes/options-config.php:277
+msgid "Page Templates"
+msgstr ""
+
+#: includes/options-config.php:287
+msgid "Demo Content"
+msgstr ""
+
+#: includes/options-config.php:292
+msgid "Polylang Compatible"
+msgstr ""
+
+#: includes/options-config.php:297
+msgid "Multiple Portfolio Layouts"
+msgstr ""
+
+#: includes/options-config.php:302
+msgid "Multiple Blog Layouts"
+msgstr ""
+
+#: includes/options-config.php:307
+msgid "Page Animation"
+msgstr ""
+
+#: includes/options-config.php:336, includes/options-config.php:337
+msgid "Theme Options"
+msgstr ""
+
+#: includes/options-config.php:340
+msgid "General"
+msgstr ""
+
+#: includes/options-config.php:341
+msgid "General settings that affects overall site"
+msgstr ""
+
+#: includes/options-config.php:345
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: includes/options-config.php:351
+msgid "Select Breadcrumb Character"
+msgstr ""
+
+#: includes/options-config.php:362
+msgid "Enable Numeric Page Navigation"
+msgstr ""
+
+#: includes/options-config.php:363
+msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
+msgstr ""
+
+#: includes/options-config.php:369
+msgid "Website Layout Options"
+msgstr ""
+
+#: includes/options-config.php:370
+msgid "Select main content and sidebar alignment."
+msgstr ""
+
+#: includes/options-config.php:372
+msgid "Sidebar Left"
+msgstr ""
+
+#: includes/options-config.php:373
+msgid "Sidebar Right"
+msgstr ""
+
+#: includes/options-config.php:374
+msgid "Full Width"
+msgstr ""
+
+#: includes/options-config.php:375
+msgid "No Sidebar"
+msgstr ""
+
+#: includes/options-config.php:383
+msgid "Header"
+msgstr ""
+
+#: includes/options-config.php:384
+msgid "Header options"
+msgstr ""
+
+#: includes/options-config.php:388
+msgid "Logo as Title"
+msgstr ""
+
+#: includes/options-config.php:394
+msgid "Show site Tagline"
+msgstr ""
+
+#: includes/options-config.php:400
+msgid "Enable to Display contact Section"
+msgstr ""
+
+#: includes/options-config.php:406
+msgid "Enter Phone Number 1"
+msgstr ""
+
+#: includes/options-config.php:411
+msgid "Enter Phone Number 2"
+msgstr ""
+
+#: includes/options-config.php:418
+msgid "Footer"
+msgstr ""
+
+#: includes/options-config.php:419
+msgid "Footer related options"
+msgstr ""
+
+#: includes/options-config.php:423
+msgid "Footer Widget Area"
+msgstr ""
+
+#: includes/options-config.php:429
+msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
+msgstr ""
+
+#: includes/options-config.php:430
+msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
+msgstr ""
+
+#: includes/options-config.php:436, includes/template-tags.php:187
+msgid "Home"
+msgstr ""
+
+#: includes/options-config.php:437
+msgid "Home Page options"
+msgstr ""
+
+#: includes/options-config.php:441
+msgid "Enable Home Page Slider Section"
+msgstr ""
+
+#: includes/options-config.php:447
+msgid "Slider Posts Category"
+msgstr ""
+
+#: includes/options-config.php:452
+msgid "No. of Sliders"
+msgstr ""
+
+#: includes/options-config.php:458
+msgid "Enable Home Page Service Section"
+msgstr ""
+
+#: includes/options-config.php:464
+msgid "Choose Service Section Icons #1"
+msgstr ""
+
+#: includes/options-config.php:469
+msgid "Service Section #1"
+msgstr ""
+
+#: includes/options-config.php:474
+msgid "Choose Service Section Icons #2"
+msgstr ""
+
+#: includes/options-config.php:479
+msgid "Service Section #2"
+msgstr ""
+
+#: includes/options-config.php:484
+msgid "Choose Service Section Icons #3"
+msgstr ""
+
+#: includes/options-config.php:489
+msgid "Service Section #3"
+msgstr ""
+
+#: includes/options-config.php:494
+msgid "Choose Service Section Icons #4"
+msgstr ""
+
+#: includes/options-config.php:499
+msgid "Service Section #4"
+msgstr ""
+
+#: includes/options-config.php:504
+msgid "Service Image Section"
+msgstr ""
+
+#: includes/options-config.php:509
+msgid "Enable Home Page Recent Post Section"
+msgstr ""
+
+#: includes/options-config.php:510
+msgid "Enable recent post section in home page"
+msgstr ""
+
+#: includes/options-config.php:516
+msgid "Enable Home Page Default Content"
+msgstr ""
+
+#: includes/options-config.php:517
+msgid "Enable home page default content"
+msgstr ""
+
+#: includes/options-config.php:524
+msgid "Blog"
+msgstr ""
+
+#: includes/options-config.php:525
+msgid "Blog Related Posts options"
+msgstr ""
+
+#: includes/options-config.php:529
+msgid "Enable Featured Image"
+msgstr ""
+
+#: includes/options-config.php:535
+msgid "Choose the featured image display type for Blog Page "
+msgstr ""
+
+#: includes/options-config.php:537, includes/options-config.php:553
+msgid "Large Featured Image"
+msgstr ""
+
+#: includes/options-config.php:538, includes/options-config.php:554
+msgid "Small Featured Image"
+msgstr ""
+
+#: includes/options-config.php:545
+msgid "Enable Single Post Featured Image"
+msgstr ""
+
+#: includes/options-config.php:551
+msgid "Choose the featured image display type for Single Page "
+msgstr ""
+
+#: includes/options-config.php:561
+msgid " Enable Author Bio Box below single post"
+msgstr ""
+
+#: includes/options-config.php:562
+msgid "Show Author information box below single post."
+msgstr ""
+
+#: includes/options-config.php:568
+msgid "Show Related posts"
+msgstr ""
+
+#: includes/options-config.php:569
+msgid "Show related posts."
+msgstr ""
+
+#: includes/options-config.php:575
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: includes/options-config.php:577
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: includes/options-config.php:578
+msgid "Related Posts By Categories"
+msgstr ""
+
+#: includes/options-config.php:585
+msgid " Show Comments"
+msgstr ""
+
+#: includes/options-config.php:586
+msgid "Show Comments"
+msgstr ""
+
+#: includes/template-tags.php:24
+msgid "Post navigation"
+msgstr ""
+
+#: includes/template-tags.php:27
+msgctxt "Previous post link"
+msgid "previous post"
+msgstr ""
+
+#: includes/template-tags.php:28
+msgctxt "Next post link"
+msgid "Next Post&nbsp;"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: includes/template-tags.php:47, includes/template-tags.php:485
+msgid ", "
+msgstr ""
+
+#: includes/template-tags.php:49, includes/template-tags.php:487
+msgid "%1$s "
+msgstr ""
+
+#: includes/template-tags.php:124
+msgid "Recent Blogs"
+msgstr ""
+
+#: includes/template-tags.php:188
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: includes/template-tags.php:189
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: includes/template-tags.php:190
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: includes/template-tags.php:191
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: includes/template-tags.php:192
+msgid "Error 404"
+msgstr ""
+
+#: includes/template-tags.php:245, includes/template-tags.php:245, includes/template-tags.php:246, includes/template-tags.php:250, includes/template-tags.php:250, includes/template-tags.php:254
+msgid "Y"
+msgstr ""
+
+#: includes/template-tags.php:246
+msgid "m"
+msgstr ""
+
+#: includes/template-tags.php:246, includes/template-tags.php:251
+msgid "F"
+msgstr ""
+
+#: includes/template-tags.php:247
+msgid "d"
+msgstr ""
+
+#: includes/template-tags.php:317
+msgid "Page"
+msgstr ""
+
+#: includes/template-tags.php:332, includes/template-tags.php:343
+msgctxt "post author"
+msgid " %s"
+msgstr ""
+
+#: includes/template-tags.php:363
+msgid "No Comments"
+msgstr ""
+
+#: includes/template-tags.php:365
+msgid " Comments"
+msgstr ""
+
+#: includes/template-tags.php:367
+msgid "1 Comment"
+msgstr ""
+
+#: includes/template-tags.php:371
+msgid "Leave a comment"
+msgstr ""
+
+#: includes/template-tags.php:380, template-parts/content-page.php:29
+msgid "Edit"
+msgstr ""
+
+#: includes/template-tags.php:427, includes/template-tags.php:430
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#: includes/template-tags.php:503
+msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
+msgstr ""
+
+#: includes/template-tags.php:504
+msgid "Get started with Cleanse"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:23
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:56, template-parts/content.php:62
+msgid "Pages: "
+msgstr ""

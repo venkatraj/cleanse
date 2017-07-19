@@ -1,0 +1,100 @@
+
+.branding {     
+	
+
+	.site-branding {
+		text-align: left;
+		position: relative;
+		margin:15px 0px;
+		.site-description {
+			@include font-size(1.4);
+			color: $c3;
+			font-family: $copy_font;
+			padding: 0px 10px 10px 0px;
+			position: relative;
+			margin-bottom:0;
+			margin-top: -12px;
+			
+		}
+
+		.site-title {
+			margin-bottom: 0;
+			@include font-size(3);
+			a {
+				display: block;
+        color:$secondary;
+			}
+			
+			a:hover {
+				color: $primary;
+			}
+		}	
+
+	}
+}
+
+.sticky-nav {
+ 	position: fixed;
+	top: -2px;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.admin-bar .nav-wrap.sticky-nav {
+   top: 30px;
+}
+
+.no-sidebar {
+ 	float: none;
+ 	margin: 0 auto;
+ 	display: block;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: $secondary;
+  position: relative;
+  padding:25px 0px;
+  margin-top: 0;
+  a {
+    color: $white;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+  .breadcrumb-left {
+      h4 {
+        @include font-size(2.5);
+        color: $white;
+        margin-bottom:0;
+        font-weight:600;
+      }
+  }
+
+  .breadcrumb-right {
+   text-align: right;
+   font-size:14px;
+   color: $white;
+   text-transform:uppercase;
+   float: right;
+   margin-top: 8px;
+    #crumbs{
+      span {
+      	padding:0px 5px;
+      }
+    }
+  }
+}
+
+
+.blog {
+  .site-header {
+    border-bottom:2px solid $c2;
+  }
+}
+
+
+
+
+@import "top-header";
