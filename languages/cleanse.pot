@@ -84,6 +84,10 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
+#: functions.php:129
+msgid "Working Hour :  Mon - Sat ( 8AM - 8PM )"
+msgstr ""
+
 #: functions.php:141
 msgid "<h4 class=\"widget-title\">Cleaning</h4>Cleaning is created for your professional business, why not purchase and make the difference today? Get more customers who are thirsty to run to hire your service."
 msgstr ""
@@ -182,6 +186,14 @@ msgstr ""
 
 #: template-full-width.php:2
 msgid "Full Width Template"
+msgstr ""
+
+#: includes/custom-header.php:97
+msgid "Play background video"
+msgstr ""
+
+#: includes/custom-header.php:98
+msgid "Pause background video"
 msgstr ""
 
 #: includes/enqueue.php:38
@@ -350,7 +362,7 @@ msgid "Upgrade To Cleanse Pro"
 msgstr ""
 
 #: includes/options-config.php:168
-msgid "Welcome to %1s - Version %2s"
+msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
 #: includes/options-config.php:169

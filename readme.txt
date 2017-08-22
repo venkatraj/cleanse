@@ -65,5 +65,6 @@ Cleanse WordPress Theme bundles the following third-party resources:
 	https://pixabay.com/en/orange-brush-wagner-cleaning-253931/
 	https://pixabay.com/en/clean-work-janitor-interior-man-863691/
 	https://pixabay.com/en/girl-glasses-mop-cleaning-clean-1531575/
+	https://pixabay.com/en/hall-apartment-interior-design-621741/
 	https://pixabay.com/en/window-washer-abseiling-cleaning-1566247
 * Except above All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv3.

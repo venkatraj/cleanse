@@ -159,8 +159,8 @@ function cleanse_display_upgrade() {
         $tab = null;
     }    
 
-	$pro_theme_url = 'https://genexthemes.com/downloads/cleansepro/';
-    $doc_url  = 'www.genexthemes.com/docs/free/cleanse/';
+	$pro_theme_url = 'https://genexthemes.com/downloads/cleanse-pro/';
+    $doc_url  = 'https://www.genexthemes.com/docs/free/cleanse/';
     $support_url = 'https://genexthemes.com/free-support-request/';   
     
     $current_action_link =  admin_url( 'themes.php?page=cleanse_upgrade&tab=pro_features' ); ?>

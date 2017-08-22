@@ -103,11 +103,7 @@ gulp.task('watch',function(){
     files: ['./**/*.php'],    
     proxy: 'http://localhost/new/cleanse',
   }); 
-  // gulp.watch('dist/js/*.js',['scripts']);
-   gulp.watch('sass/**/*.scss',['styles']);    
-   gulp.watch('dist/images/**/*.+(png|jpg|jpeg|gif|svg)',['images']);
+  // gulp.watch('dist/js/*.js',['scripts',browserSync.reload]);  
+   gulp.watch('sass/**/*.scss',['styles','rtl',browserSync.reload]);      
+   gulp.watch('dist/images/**/*.+(png|jpg|jpeg|gif|svg)',['images',browserSync.reload]);  
 });
-
-
-
-
