@@ -8,12 +8,12 @@
  */
 ?>
 		</div> <!-- .container -->
-	</div><!-- #content -->
+	</div><!-- #content --> 
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<?php 
 		$footer_widgets = get_theme_mod( 'footer_widgets',true );
-		if( $footer_widgets && ( is_active_sidebar('footer') ||is_active_sidebar('footer-2') ||is_active_sidebar('footer-3') ) ) : ?>
+		if( $footer_widgets && ( is_active_sidebar('footer') || is_active_sidebar('footer-2') ||is_active_sidebar('footer-3') ) ) : ?>
 		<div class="footer-widgets">
 			<div class="container">
 				<?php get_template_part('footer','widgets'); ?>

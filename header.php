@@ -43,7 +43,7 @@ if ( is_singular() && pings_open() ) { ?>
 										<span><i class="fa fa-phone"></i></span>
 									</div>
 									<div class="contact-info">
-										<span class="title"><?php echo apply_filters('contact_info_title', __('Call Us Now','cleanse') ); ?></span>
+										<span class="title"><?php echo apply_filters('cleanse_contact_info_title', __('Call Us Now','cleanse') ); ?></span>
 										<span><?php echo esc_html(get_theme_mod('phone_num1')); ?></span>
 										<span><?php echo esc_html(get_theme_mod('phone_num2')); ?></span>
 									</div> 
@@ -69,7 +69,7 @@ if ( is_singular() && pings_open() ) { ?>
 							<?php 
 								$logo_title = get_theme_mod( 'logo_title' );   
 								$tagline = get_theme_mod( 'tagline',true);
-								if( $logo_title && function_exists( 'the_custom_logo' ) ) :
+								if( $logo_title ) :
 	                                the_custom_logo();     
 	                            else : ?>
 									<h3 class="site-title"><a style="color: #<?php header_textcolor(); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>

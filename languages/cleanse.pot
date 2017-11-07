@@ -76,12 +76,20 @@ msgstr ""
 msgid "Theme: Cleanse by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Genex Themes</a></p>"
 msgstr ""
 
-#: front-page.php:38, includes/template-tags.php:458, template-parts/content-single.php:46, template-parts/content.php:52
+#: front-page.php:36, includes/template-tags.php:463, template-parts/content-single.php:46, template-parts/content.php:52
 msgid "Read More"
+msgstr ""
+
+#: front-page.php:38, front-page.php:116, front-page.php:153, includes/template-tags.php:158, template-parts/content-single.php:51, template-parts/content.php:57
+msgid "Pages: "
 msgstr ""
 
 #: functions.php:46
 msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:108
+msgid "<i class=\"fa fa-map-marker\"></i>14 XXX Road, London,  England"
 msgstr ""
 
 #: functions.php:129
@@ -188,11 +196,15 @@ msgstr ""
 msgid "Full Width Template"
 msgstr ""
 
-#: includes/custom-header.php:97
-msgid "Play background video"
+#: admin/control-icon-picker.php:42
+msgid "Inline picker"
 msgstr ""
 
 #: includes/custom-header.php:98
+msgid "Play background video"
+msgstr ""
+
+#: includes/custom-header.php:99
 msgid "Pause background video"
 msgstr ""
 
@@ -414,7 +426,7 @@ msgid "Having Trouble, Need Support?"
 msgstr ""
 
 #: includes/options-config.php:201
-msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
+msgid "Support for %s WordPress theme is conducted through Genex free support ticket system."
 msgstr ""
 
 #: includes/options-config.php:237
@@ -573,7 +585,7 @@ msgstr ""
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:436, includes/template-tags.php:187
+#: includes/options-config.php:436, includes/template-tags.php:192
 msgid "Home"
 msgstr ""
 
@@ -732,11 +744,11 @@ msgid "Next Post&nbsp;"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: includes/template-tags.php:47, includes/template-tags.php:485
+#: includes/template-tags.php:47, includes/template-tags.php:490
 msgid ", "
 msgstr ""
 
-#: includes/template-tags.php:49, includes/template-tags.php:487
+#: includes/template-tags.php:49, includes/template-tags.php:492
 msgid "%1$s "
 msgstr ""
 
@@ -744,80 +756,80 @@ msgstr ""
 msgid "Recent Blogs"
 msgstr ""
 
-#: includes/template-tags.php:188
+#: includes/template-tags.php:193
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:189
+#: includes/template-tags.php:194
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:190
+#: includes/template-tags.php:195
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:191
+#: includes/template-tags.php:196
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:192
+#: includes/template-tags.php:197
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:245, includes/template-tags.php:245, includes/template-tags.php:246, includes/template-tags.php:250, includes/template-tags.php:250, includes/template-tags.php:254
+#: includes/template-tags.php:250, includes/template-tags.php:250, includes/template-tags.php:251, includes/template-tags.php:255, includes/template-tags.php:255, includes/template-tags.php:259
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:246
+#: includes/template-tags.php:251
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:246, includes/template-tags.php:251
+#: includes/template-tags.php:251, includes/template-tags.php:256
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:247
+#: includes/template-tags.php:252
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:317
+#: includes/template-tags.php:322
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:332, includes/template-tags.php:343
+#: includes/template-tags.php:337, includes/template-tags.php:348
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:363
+#: includes/template-tags.php:368
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:365
+#: includes/template-tags.php:370
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:367
+#: includes/template-tags.php:372
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:371
+#: includes/template-tags.php:376
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:380, template-parts/content-page.php:29
+#: includes/template-tags.php:385, template-parts/content-page.php:27
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:427, includes/template-tags.php:430
+#: includes/template-tags.php:432, includes/template-tags.php:435
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:503
+#: includes/template-tags.php:508
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:504
+#: includes/template-tags.php:509
 msgid "Get started with Cleanse"
 msgstr ""
 
@@ -837,10 +849,6 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:23
+#: template-parts/content-page.php:20
 msgid "Pages:"
-msgstr ""
-
-#: template-parts/content-single.php:56, template-parts/content.php:62
-msgid "Pages: "
 msgstr ""

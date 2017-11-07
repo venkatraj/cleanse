@@ -31,6 +31,7 @@ html {
 body {
   background: $white; /* Fallback for when there is no custom background color defined. */
   overflow: hidden;
+  direction: ltr;
 }
 article,
 aside,

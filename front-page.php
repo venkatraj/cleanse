@@ -8,9 +8,7 @@
  
 if ( 'posts' == get_option( 'show_on_front' ) ) { 
 	get_template_part('index');
-} else {
-
-	 
+} else { 
     get_header(); 
 
 	$slider_cat = get_theme_mod( 'slider_cat', '' );
@@ -35,7 +33,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 								    		<?php the_post_thumbnail('full'); ?>
 								    	</div>
 								    	<div class="flex-caption">
-								    		<?php the_content( __('Read More','cleanse') ); ?>
+								    		<?php the_content( __('Read More','cleanse') );
+								    		wp_link_pages( array(
+												'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'cleanse' ),
+												'after'  => '</div>',
+											) );  ?>
 								    	</div>
 								    </li>
 							    <?php endif;?>			   
@@ -51,7 +53,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		}
     endif; 
 	if( get_theme_mod('service_field',true) ) {
-       do_action('service_content_before');
+       do_action('cleanse_service_content_before');
       
 		$service_page1 = intval(get_theme_mod('service_1'));
 		$service_page2 = intval(get_theme_mod('service_2'));
@@ -100,7 +102,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 						               </div><?php
 									endif ?>
 						    	    <?php if($i==4) { echo '</div><div class="five columns">'; }?>
-						    	    <?php if($i !=3 ) { ?>
+						    	    <?php if($i != 3 ) { ?>
 										<div class="service-section">
 									    	<?php if($icon_url): ?>
 							    	           <div class="service-image"><i class="fa <?php echo $icon_url; ?>"></i></div><?php 
@@ -109,7 +111,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 									    	<?php endif; ?>
 									    	<div class="service-content">
 									    	    <?php the_title( sprintf( '<h3 class="title-divider"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-										    	<?php the_content(); ?>
+										    	<?php the_content(); 
+											    	wp_link_pages( array(
+													'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'cleanse' ),
+													'after'  => '</div>',
+												) ); ?>
 									    	</div>
 									    </div>
 									<?php }
@@ -128,7 +134,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		} 	
 
 		
-		do_action('service_content_after'); 
+		do_action('cleanse_service_content_after'); 
 
 	}	
 	if( get_theme_mod('enable_recent_post_service',true) ) :
@@ -142,7 +148,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 			<div class="container">
 				<main id="main" class="site-main" role="main"><?php
 					while ( have_posts() ) : the_post();       
-						the_content();
+						the_content(); 
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'cleanse' ),
+							'after'  => '</div>',
+						) ); 
 					endwhile; ?>
 			    </main><!-- #main -->
 		    </div><!-- #primary -->

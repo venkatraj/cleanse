@@ -105,7 +105,7 @@ function cleanse_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<i class="fa fa-map-marker"></i>14 Gandhi Road, London,  England'
+					  'text'  => __( '<i class="fa fa-map-marker"></i>14 XXX Road, London,  England', 'cleanse'),
 					)
 				)
 			),
@@ -118,7 +118,7 @@ function cleanse_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a><a href="#"><i class="fa fa-envelope"></i></a><a href="#"><i class="fa fa-google"></i></a></li></ul>'
+					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a><a href="#"><i class="fa fa-envelope"></i></a><a href="#"><i class="fa fa-google"></i></a></li></ul>',
 					)
 				),
 				'my_text1' => array(
@@ -242,12 +242,12 @@ function cleanse_setup() {
 			'service_3' => '{{service-three}}',
 			'service_4' => '{{service-four}}',
 			'service_image' => '{{service-center-image}}',
-			'phone_num1' =>'1-775-93-039', 
-			'phone_num2' =>'1-775-93-039',
+			'phone_num1' => '1-775-93-039', 
+			'phone_num2' => '1-775-93-039',
 			
 		),
 
-	);
+	);  
 
 	$starter_content = apply_filters( 'cleanse_starter_content', $starter_content );
 

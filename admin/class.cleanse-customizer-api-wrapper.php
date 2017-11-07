@@ -3,12 +3,12 @@
 	 * A Wrapper Class for WP Customizer API
 	 *
 	 * Also, adds custom controls for Customizer by extending it.
-	 */
+	 */ 
 
 if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 	class Cleanse_Customizer_API_Wrapper {
 
-		private static $_instance;
+		private static $_instance; 
 
 		// Holds Panels of Customizer Options
 		// TODO: Have to test without Panels
@@ -64,7 +64,6 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 		 * @return [type]               [description]
 		 */
 		public function init($wp_customize) {
-			add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
 		
 			if( ! empty($this->_root_sections)) {
 				$this->sections = $this->_root_sections['sections'];
@@ -75,12 +74,6 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 		}
 
 		/**
-		 * Enqueue Scripts
-		 */
-		public function enqueue_scripts() {
-		}
-
-		/**
 		 * Loop through Panels, and all method to add panel
 		 * @param [type] $wp_customize [description]
 		 */
@@ -88,7 +81,7 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 			foreach ($this->panels as $panel_id => $panel_details) {
 				$this->add_panel($wp_customize, $panel_id, $panel_details);
 			}
-		}
+		}   
 
 		/**
 		 * Add Panels to Customizer options
@@ -99,15 +92,14 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 		public function add_panel($wp_customize, $panel_id, $panel_details) {
 			$this->sections = $panel_details['sections'];
 			unset($panel_details['sections']);
-			extract($panel_details);
 			$this->_panel_id = $panel_id;
 			$wp_customize->add_panel(
 				$panel_id,
 				array(
-					'priority' => isset($priority) ? $priority : '',
-					'capability'     => isset($capability) ? $capability : 'edit_theme_options',
-					'title'          => isset($title) ? $title : '',
-					'description'    => isset($description) ? $description : '',						
+					'priority' => isset($panel_details['priority']) ? $panel_details['priority'] : '',
+					'capability'     => isset($panel_details['capability']) ? $panel_details['capability'] : 'edit_theme_options',
+					'title'          => isset($panel_details['title']) ? $panel_details['title'] : '',
+					'description'    => isset($panel_details['description']) ? $panel_details['description'] : '',						
 				)
 			);
 			$this->add_sections($wp_customize);
@@ -132,13 +124,12 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 		public function add_section($wp_customize, $section_details) {
 			$this->fields = $section_details['fields'];
 			unset($section_details['fields']);
-			extract($section_details);
 			$wp_customize->add_section(
 				$this->_section_id,
 				array(
-					'priority' => isset($priority) ? $priority : '',
-					'title'          => isset($title) ? $title : '',
-					'description'    => isset($description) ? $description : '',
+					'priority' => isset($section_details['priority']) ? $section_details['priority'] : '',
+					'title'          => isset($section_details['title']) ? $section_details['title'] : '',
+					'description'    => isset($section_details['description']) ? $section_details['description'] : '',
 					'panel' => $this->_panel_id
 				)
 			);
@@ -180,15 +171,14 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 		 * @param [type] $field_details [description]
 		 */
 		public function add_control($wp_customize, $field_id, $field_details) {
-			extract($field_details);
-			switch ($type) {
+			switch ($field_details['type']) {
 				case 'upload':
 					$wp_customize->add_control( 
 						new WP_Customize_Upload_Control( 
 							$wp_customize, 
 							$field_id, 
 							array(
-								'label' => isset($label) ? $label : '',
+								'label' => isset($field_details['label']) ? $field_details['label'] : '',
 								'setting' => $field_id,
 								'section' => $this->_section_id,
 							)
@@ -201,7 +191,7 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 							$wp_customize, 
 							$field_id, 
 							array(
-								'label' => isset($label) ? $label : '',
+								'label' => isset($field_details['label']) ? $field_details['label'] : '',
 								'setting' => $field_id,
 								'section' => $this->_section_id,
 							)
@@ -214,7 +204,7 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 							$wp_customize, 
 							$field_id, 
 							array(
-								'label' => isset($label) ? $label : '',
+								'label' => isset($field_details['label']) ? $field_details['label'] : '',
 								'setting' => $field_id,
 								'section' => $this->_section_id,
 							)
@@ -223,11 +213,11 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 					break;
 				case 'icons-picker':
 					$wp_customize->add_control( 
-						new Icon_Customizer_Icon_Picker_Control(
+						new Cleanse_Icon_Customizer_Icon_Picker_Control(
 							$wp_customize, 
 							$field_id,
 							array(
-								'label' => isset($label) ? $label : '',
+								'label' => isset($field_details['label']) ? $field_details['label'] : '',
 								'type' => 'icon-picker',
 								'setting' => $field_id,
 								'section' => $this->_section_id,
@@ -243,7 +233,7 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 					$wp_customize->add_control(
 						$field_id,
 						array(
-							'label' => isset($label) ? $label : '',
+							'label' => isset($field_details['label']) ? $field_details['label'] : '',
 							'type' => 'select',
 							'setting' => $field_id,
 							'section' => $this->_section_id,
@@ -255,11 +245,11 @@ if( ! class_exists('Cleanse_Customizer_API_Wrapper') ) {
 					$wp_customize->add_control(
 						$field_id,
 						array(
-							'label' => isset($label) ? $label : '',
-							'type' => isset($type) ? $type : 'text',
+							'label' => isset($field_details['label']) ? $field_details['label'] : '',
+							'type' => isset($field_details['type']) ?$field_details['type'] : 'text',
 							'setting' => $field_id,
 							'section' => $this->_section_id,
-							'choices' => isset($choices) ? $choices : ''
+							'choices' => isset($field_details['choices']) ? $field_details['choices'] : ''
 						)
 					);
 					break;

@@ -4,11 +4,11 @@ Theme URI: http://www.genexthemes.com/cleanse/
 Author: V. Uma Rani
 Author URI: http://www.genexthemes.com/
 Description: Cleanse is a beautiful and Flexible WordPress Free theme for cleaning services,Maintenance, Maid clean services. Cleanse is also highly suitable for other company and corporate categories. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 3 Footer Widget Areas. 
-Version: 1.0.0
+Version: 1.0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: cleanse
-Tags:  blog, news, custom-menu, custom-background, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns
+Tags: blog, news, photography, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
 
 Cleanse WordPress Theme, Copyright (C) 2017, V. Uma Rani
 Cleanse is distributed under the terms of the GNU GPL
@@ -88,7 +88,8 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  overflow: hidden; }
+  overflow: hidden;
+  direction: ltr; }
 
 article,
 aside,
@@ -1302,6 +1303,9 @@ object {
 /*--------------------------------------------------------------
 8.0 Header
 --------------------------------------------------------------*/
+.site-header {
+  border-bottom: 1px solid #d7d7d7; }
+
 .branding .site-branding {
   text-align: left;
   position: relative;

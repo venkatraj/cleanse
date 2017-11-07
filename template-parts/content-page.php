@@ -14,18 +14,16 @@
 				the_post_thumbnail('cleanse-blog-large-width'); 		
 			endif;?>
 
-		<?php the_content(); ?>
-		
-	</div><!-- .entry-content -->
+		<?php the_content();
 
-	   <?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cleanse' ),
 				'after'  => '</div>',
 			) );
 		?>
+	</div><!-- .entry-content -->
 
-	
+	  
 	<?php edit_post_link( __( 'Edit', 'cleanse' ), '<footer class="entry-footer"><span class="edit-link"><i class="fa fa-pencil"></i>', '</span></footer>' ); ?>
 
 

@@ -154,6 +154,11 @@ if( ! function_exists('cleanse_recent_posts') ) {
 						    $output .= '<h3><a href="'. esc_url(get_permalink()) . '">' . get_the_title() . '</a></h3>';
 							$output .= '<div class="latest-post-content">';
 								$output .= '<p>' . get_the_content() . '</p>';
+								$output .= wp_link_pages( array(
+									'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'cleanse' ),
+									'after'  => '</div>',
+									'echo'  =>  false,
+								) );
 							$output .= '</div><!-- .latest-post-content -->';
 						$output .= '</div>';
 					}
@@ -314,7 +319,7 @@ if( ! function_exists('cleanse_recent_posts') ) {
 
 			if ( get_query_var('paged') ) {
 				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-				echo __('Page', 'cleanse' ) . ' ' . get_query_var('paged');
+				 _e('Page', 'cleanse' ) . ' ' . get_query_var('paged');
 				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
 			}
 

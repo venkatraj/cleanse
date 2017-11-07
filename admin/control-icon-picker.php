@@ -23,9 +23,9 @@
  * @subpackage Icon Picker
  * @since 0.1
  */
-if( !function_exists('icon_add_icon_picker_control') ) {
-	function icon_add_icon_picker_control( $wp_customize ) {
-		class Icon_Customizer_Icon_Picker_Control extends WP_Customize_Control {
+if( !function_exists('cleanse_icon_add_icon_picker_control') ) {
+	function cleanse_icon_add_icon_picker_control( $wp_customize ) {
+		class Cleanse_Icon_Customizer_Icon_Picker_Control extends WP_Customize_Control {
 
 			public $type = 'icon-picker'; 
 	 
@@ -33,28 +33,19 @@ if( !function_exists('icon_add_icon_picker_control') ) {
 				wp_enqueue_script( 'icon-picker-js', trailingslashit( get_template_directory_uri() ) . 'js/fontawesome-iconpicker.min.js', array( 'jquery' )  );
 			    wp_enqueue_style( 'icon-picker-css', trailingslashit( get_template_directory_uri() ) . 'css/fontawesome-iconpicker.min.css' );
 			    wp_enqueue_style( 'font-awesome', trailingslashit( get_template_directory_uri() ) . 'css/font-awesome.min.css' );
-			   // wp_enqueue_script( 'icon-picker-jsss', trailingslashit( get_template_directory_uri() ) . 'js/aaa.js',  array( 'jquery' )  );
 			}
 
 			public function render_content() {
 			
 
 			?>
-				<label data-title="Inline picker">
+				<label data-title="<?php esc_attr_e('Inline picker','cleanse'); ?>">
 	                <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 	                <input type="text" value="<?php echo esc_attr( $this->value() ); ?>" <?php $this->link(); ?> class="faip" data-placement="inline"/>
 	            </label>
-	            <script type="text/javascript">
-					jQuery(function($) {  
-						//$('.faip').click(function() {
-							$('.faip').iconpicker(); 
-						   // $('.iconpicker-popover').toggle();
-					    //});
-					});
-				</script>
 			<?php }
 
 		}
 	}
 }
-add_action( 'customize_register', 'icon_add_icon_picker_control' );
+add_action( 'customize_register', 'cleanse_icon_add_icon_picker_control' );

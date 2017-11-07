@@ -47,7 +47,7 @@ get_template_part( 'template-parts/breadcrumb' ); ?>
 				if(  get_theme_mod ('numeric_pagination',true) ) : 
 						the_posts_pagination();
 					else :
-						cleanse_post_nav();     
+						the_posts_navigation();     
 					endif; 
 			?>
 

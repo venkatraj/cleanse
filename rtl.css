@@ -40,7 +40,8 @@ html {
 body {
   background: #fff;
   
-  overflow: hidden; }
+  overflow: hidden;
+  direction: rtl; }
 
 article,
 aside,
@@ -1227,6 +1228,9 @@ object {
 .infinity-end.neverending .site-footer {
   display: block; }
 
+
+.site-header {
+  border-bottom: 1px solid #d7d7d7; }
 
 .branding .site-branding {
   text-align: right;

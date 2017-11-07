@@ -167,7 +167,7 @@ function cleanse_display_upgrade() {
     <div class="cleanse-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'cleanse'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
        	printf( __('<div class="about-text"> Cleanse is a beautiful and Flexible WordPress Free theme for cleaning services,Maintenance, Maid clean services. Cleanse is also highly suitable for other company and corporate categories. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 3 Footer Widget Areas.</div>', 'cleanse') ); ?>
-        <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
+        <a href="https://genexthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'cleanse'), $theme_data->Name ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
@@ -198,7 +198,7 @@ function cleanse_display_upgrade() {
                         </div>  
                         <div class="theme_link">
                             <h3><?php esc_html_e( 'Having Trouble, Need Support?', 'cleanse' ); ?></h3>
-                            <p class="about"><?php printf(esc_html__('Support for %s WordPress theme is conducted through Webulous free support ticket system.', 'cleanse'), $theme_data->Name); ?></p>
+                            <p class="about"><?php printf(esc_html__('Support for %s WordPress theme is conducted through Genex free support ticket system.', 'cleanse'), $theme_data->Name); ?></p>
                             <p>  
                                 <a href="<?php echo esc_url($support_url); ?>" target="_blank" class="button button-secondary"><?php echo sprintf( esc_html('Create a support ticket', 'cleanse'), $theme_data->Name); ?></a>
                             </p>
@@ -328,7 +328,7 @@ function cleanse_display_upgrade() {
    
 
 	$options = array(
-		'capability' => 10,
+		'capability' => 'edit_theme_options',
 		'type' => 'theme_mod',
 		'panels' => apply_filters( 'cleanse_customizer_options', array(
 			'cleanse' => array(

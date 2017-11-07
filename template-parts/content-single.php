@@ -27,9 +27,9 @@
 	<div class="latest-content clearfix">
 			<div class="entry-date"> 
 				<span class="date-structure">
-					<h2 class="dd"><?php echo get_the_time('j');?></h2>
-					<span class="month"><?php echo get_the_time('M');?></span>
-					<span class="year"><?php echo get_the_time('Y');?></span>
+					<h2 class="dd"><?php the_time('j');?></h2>
+					<span class="month"><?php the_time('M');?></span>
+					<span class="year"><?php the_time('Y');?></span>
 				</span>
 			</div>
 			<header class="header-content"> 
@@ -46,17 +46,15 @@
 						__( 'Read More', 'cleanse' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					) );
-				?>  
-
+				
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'cleanse' ),
+						'after'  => '</div>',
+					) );
+			?>
 				
 			</div><!-- .entry-content -->
 
-		    <?php
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'cleanse' ),
-					'after'  => '</div>',
-				) );
-			?>
 
 		
 	 </header><!-- .entry-header -->

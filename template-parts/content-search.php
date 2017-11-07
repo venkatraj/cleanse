@@ -15,9 +15,9 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-date"> 
 				<span class="date-structure">
-					<h2 class="dd"><?php echo get_the_time('j');?></h2>
-					<span class="month"><?php echo get_the_time('M');?></span>
-					<span class="year"><?php echo get_the_time('Y');?></span>
+					<h2 class="dd"><?php the_time('j');?></h2>
+					<span class="month"><?php the_time('M');?></span>
+					<span class="year"><?php the_time('Y');?></span>
 				</span>
 			</div><!-- .entry-meta -->
 				<?php cleanse_top_meta();?>
