@@ -247,7 +247,7 @@ function cleanse_setup() {
 			
 		),
 
-	);  
+	);
 
 	$starter_content = apply_filters( 'cleanse_starter_content', $starter_content );
 
@@ -372,7 +372,7 @@ function cleanse_output_content_wrapper_end () {
 	echo "</div>";
 }
 
-add_action( 'wp_head', 'cleanse_remove_wc_breadcrumbs' );
+add_action( 'init', 'cleanse_remove_wc_breadcrumbs' );
 function cleanse_remove_wc_breadcrumbs() {
    	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }

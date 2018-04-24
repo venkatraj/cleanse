@@ -12,7 +12,7 @@
 #free_pro .free-pro-table td {
   border-top: 1px solid #ccc;
   padding: 20px 0 25px;
-} 
+}
 
 #free_pro .free-pro-table h3{
   margin: 0;
@@ -196,20 +196,16 @@ a[href="themes.php?page=cleanse_upgrade"] {
   float: right;
   display: block;
   text-decoration: none;
-  padding-right: 10px; 
+  padding: 10px 25px; 
   font-size: 16px;
   border-radius: 2px;
-  width:210px;
-  height:45px;
-  line-height:45px;
-  text-align: center;
-  background-color: #b4161c;
   font-weight: bold;
+  background-color: #b4161c;
   color: white;
 }
 
-.upgrade-btn .upgrade:hover {
-  background-color: #c01e24; }
+  .upgrade-btn .upgrade:hover {
+    background-color: #000; }
 
 .upgrade-btn .upgrade:focus {
   box-shadow: none;

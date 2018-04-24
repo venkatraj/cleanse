@@ -105,6 +105,7 @@ add_action( 'save_post',     'cleanse_category_transient_flusher' );
 if( ! function_exists('cleanse_recent_posts') ) {
 	function cleanse_recent_posts() {      
 		$output = '';
+		$post_ID  = explode (',',get_theme_mod('recent_posts_exclude'));
 		// WP_Query arguments
 		$args = array (
 			'post_type'              => 'post',
@@ -112,6 +113,7 @@ if( ! function_exists('cleanse_recent_posts') ) {
 			'posts_per_page'         => 6,
 			'ignore_sticky_posts'    => true,
 			'order'                  => 'DESC',
+			'post__not_in'           => $post_ID,
 		);
 
 		// The Query

@@ -19,7 +19,7 @@ get_header();  ?>
 		
 	<?php $sidebar_position = get_theme_mod( 'sidebar_position', 'right' ); ?>
 		<?php if( 'left' == $sidebar_position ) :?>
-			<?php get_sidebar('left'); ?>
+			<?php get_sidebar(); ?>
 		<?php endif; ?>  
 
 	<div id="primary" class="content-area <?php cleanse_layout_class(); ?>  columns">
@@ -44,7 +44,7 @@ get_header();  ?>
 			    if(  get_theme_mod ('numeric_pagination',true) ) : 
 					the_posts_pagination();
 				else :
-					the_posts_navigation();      
+					the_posts_navigation();     
 				endif; 
 			?>
 
