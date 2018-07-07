@@ -44,7 +44,10 @@ get_header();  ?>
 			    if(  get_theme_mod ('numeric_pagination',true) ) : 
 					the_posts_pagination();
 				else :
-					the_posts_navigation();     
+					the_posts_navigation( array(
+					    'prev_text' => __(' &larr; Previous Post','cleanse'),
+					    'next_text' => __('Next Post &rarr;','cleanse'),
+					) );    
 				endif; 
 			?>
 
